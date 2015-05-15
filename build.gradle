@@ -1,0 +1,78 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+applicationDefaultJvmArgs = ["-Dendpoint=http://localhost:7400/deployr",
+                             "-Dusername=testuser",
+                             "-Dpassword=changeme",
+                             "-Dexample-max-concurrency=5"]
+                             
+
+dependencies {
+    compile "com.revolutionanalytics.deployr:jRBroker:7.4.7"
+    compile "commons-io:commons-io:2.4"
+}
+
+task argsOverride << {
+
+    /*
+     * Usage: gradlew run -Pendpoint=http://dserver:dport/deployr
+     */
+
+    if(project.hasProperty('endpoint')) {
+        applicationDefaultJvmArgs[0] = "-Dendpoint=${endpoint}"
+        println "Project property (DeployR endpoint) override: " +
+                                "${applicationDefaultJvmArgs[0]}"
+    } else {
+        println "Project property (DeployR endpoint) default: " +
+                                "${applicationDefaultJvmArgs[0]}"
+    }
+
+    if(project.hasProperty('username')) {
+        applicationDefaultJvmArgs[1] = "-Dusername=${username}"
+        println "Project property (DeployR username) override: " +
+                                "${applicationDefaultJvmArgs[1]}"
+    } else {
+        println "Project property (DeployR username) default: " +
+                                "${applicationDefaultJvmArgs[1]}"
+    }
+
+    if(project.hasProperty('password')) {
+        applicationDefaultJvmArgs[2] = "-Dpassword=${password}"
+        println "Project property (DeployR password) override: [HIDDEN]"
+    } else {
+        println "Project property (DeployR password) default: [HIDDEN]"
+    }
+
+    if(project.hasProperty('example-max-concurrency')) {
+        applicationDefaultJvmArgs[3] = "-Dexample-max-concurrency=${example-max-concurrency}"
+        println "Project property (example-max-concurrency) override: " +
+                                "${applicationDefaultJvmArgs[3]}"
+    } else {
+        println "Project property (example-max-concurrency) default: " +
+                                "${applicationDefaultJvmArgs[3]}"
+    }
+
+}
+
+tasks.run.dependsOn argsOverride
+
+jar {
+    baseName = 'java-example-rbroker-data-io'
+    version = '7.4.0'
+}
+
+task execute(type: JavaExec) {
+    mainClassName = System.getProperty("testClass")
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}

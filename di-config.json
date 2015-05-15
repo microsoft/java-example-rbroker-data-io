@@ -1,0 +1,191 @@
+{
+    "app-install": {
+        "repository": [
+            {
+                "file": {
+                    "filename": "dataIO.R",
+                    "directory": "example-data-io",
+                    "descr": "Uploaded from DeployR CLI."
+                },
+                "permissions": {
+                    "restricted": null,
+                    "shared": true,
+                    "published": false
+                }
+            },
+            {
+                "file": {
+                    "filename": "hipStar.dat",
+                    "directory": "example-data-io",
+                    "descr": "Uploaded from DeployR CLI."
+                },
+                "permissions": {
+                    "restricted": null,
+                    "shared": true,
+                    "published": false
+                }
+            },
+            {
+                "file": {
+                    "filename": "hipStar.rData",
+                    "directory": "example-data-io",
+                    "descr": "Uploaded from DeployR CLI."
+                },
+                "permissions": {
+                    "restricted": null,
+                    "shared": true,
+                    "published": false
+                }
+            }
+        ]
+    },
+    "app-run": {
+        "requireAuthentication": true,
+        "tutorial": {
+            "help": "https://github.com/deployr/java-example-client-data-io",
+            "topics": [
+                {
+                    "topic": "Authenticated Discrete Task Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.discrete.task.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.discrete.task.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.discrete.task.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.discrete.task.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.discrete.task.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.discrete.task.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Authenticated Pooled Task Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.task.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.task.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.task.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.task.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.task.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.task.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Authenticated Pooled Preload Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.preload.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.preload.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.preload.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.preload.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.preload.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.pooled.preload.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Authenticated Background Task Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.background.task.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.background.task.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.background.task.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.background.task.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.background.task.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.auth.background.task.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Anonymous Discrete Task Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.anon.discrete.task.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.anon.discrete.task.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.anon.discrete.task.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.anon.discrete.task.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.rbroker.example.data.io.anon.discrete.task.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
