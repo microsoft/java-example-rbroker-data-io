@@ -1,7 +1,7 @@
 ## Tutorial: Authenticated Pooled Task Data I/O
 
 
-The following examples demonstrate data I/O on pooled tasks by [authenticated users](http://deployr.revolutionanalytics.com/documents/dev/api-doc/guide/introduction.html#introusers) using a [Pooled RBroker Runtime](http://deployr.revolutionanalytics.com/documents/dev/rbroker/#pooled).
+The following examples demonstrate data I/O on pooled tasks by [authenticated users](https://msdn.microsoft.com/en-us/microsoft-r/deployr-api-reference#users-on-the-api) using a [Pooled RBroker Runtime](https://msdn.microsoft.com/en-us/microsoft-r/deployr-rbroker-framework#pooled-task-runtime).
 
 ```
 Source: src/main/java/com/revo/deployr/rbroker/example/data/io/auth/pooled/task/*
@@ -38,7 +38,7 @@ The set of data input and output types currently demonstrated by these examples 
 
 ## Tutorial: Running the Examples
 
-Use the [DeployR CLI](https://github.com/deployr/deployr-cli) to download and run the `java-example-rbroker-data-io` examples.
+Use the [DeployR CLI](https://github.com/microsoft/deployr-cli) to download and run the `java-example-rbroker-data-io` examples.
 
 
 ## Tutorial: Example-by-Example
@@ -54,7 +54,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step          | Log Output                                   |
 | --------------| ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ PooledBrokerConfig ] |
 |   CONNECTION   | Established authenticated pooled broker [ RBroker ] |
 |   TASK INPUT   | DeployR-encoded R input set on task, [ PooledTaskOptions.rinputs ] |
@@ -73,7 +73,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ PooledBrokerConfig ] |
 |   CONNECTION   | Established authenticated pooled broker [ RBroker ] |
 |   TASK INPUT   | External data source input set on task, [ PooledTaskOptions.rinputs ] |
@@ -91,7 +91,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ PooledBrokerConfig ] |
 |   CONNECTION   | Established authenticated pooled broker [ RBroker ] |
 |   TASK INPUT   | Repository binary file input set on task, [ PooledTaskOptions.preloadWorkspace ] |
@@ -114,7 +114,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ PooledBrokerConfig ] |
 |   CONNECTION   | Established authenticated pooled broker [ RBroker ] |
 |   TASK INPUT   | Repository binary file input set on task, [ PooledTaskOptions.preloadWorkspace ] |
@@ -132,7 +132,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ PooledBrokerConfig ] |
 |   CONNECTION   | Established authenticated pooled broker [ RBroker ] |
 |   TASK INPUT   | Repository binary file input set on task, [ PooledTaskOptions.preloadWorkspace ] |
@@ -152,7 +152,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ PooledBrokerConfig ] |
 |   CONNECTION   | Established authenticated pooled broker [ RBroker ] |
 |   TASK INPUT   | Repository binary file input set on task, [ PooledTaskOptions.preloadWorkspace ] |
@@ -173,7 +173,7 @@ The following table describes the application workflow (steps) along with the lo
 
 ## License ##
 
-Copyright (C) 2010-2015 by Revolution Analytics Inc.
+Copyright (C) 2010-2016, Microsoft Corporation
 
 This program is licensed to you under the terms of Version 2.0 of the
 Apache License. This program is distributed WITHOUT

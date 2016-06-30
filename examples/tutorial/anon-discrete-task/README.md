@@ -1,6 +1,6 @@
 ## Tutorial: Anonymous Discrete Task Data I/O
 
-The following examples demonstrate data I/O on discrete tasks by [anonymous users](http://deployr.revolutionanalytics.com/documents/dev/api-doc/guide/introduction.html#introusers) using a [Discrete RBroker Runtime](http://deployr.revolutionanalytics.com/documents/dev/rbroker/#discrete).
+The following examples demonstrate data I/O on discrete tasks by [anonymous users](https://msdn.microsoft.com/en-us/microsoft-r/deployr-api-reference#users-on-the-api) using a [Discrete RBroker Runtime](https://msdn.microsoft.com/en-us/microsoft-r/deployr-rbroker-framework#discrete-task-runtime).
 
 ```
 Source: src/main/java/com/revo/deployr/rbroker/example/data/io/anon/discrete/exec/*.java
@@ -36,7 +36,7 @@ The set of data input and output types currently demonstrated by these examples 
 
 ## Tutorial: Running the Examples
 
-Use the [DeployR CLI](https://github.com/deployr/deployr-cli) to download and run the `java-example-rbroker-data-io` examples.
+Use the [DeployR CLI](https://github.com/microsoft/deployr-cli) to download and run the `java-example-rbroker-data-io` examples.
 
 
 ## Tutorial: Example-by-Example
@@ -52,7 +52,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step          | Log Output                                   |
 | --------------| ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ DiscreteBrokerConfig ] |
 |   CONNECTION   | Established anonymous discrete broker [ RBroker ] |
 |   DATA INPUT   | DeployR-encoded R input set on task, [ DiscreteTaskOptions.rinputs ] |
@@ -72,7 +72,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ DiscreteBrokerConfig ] |
 |   CONNECTION   | Established anonymous discrete broker [ RBroker ] |
 |   DATA INPUT   | External data source input set on task, [ DiscreteTaskOptions.rinputs ] |
@@ -91,7 +91,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ DiscreteBrokerConfig ] |
 |   CONNECTION   | Established anonymous discrete broker [ RBroker ] |
 |   DATA INPUT   | Repository binary file input set on task, [ DiscreteTaskOptions.preloadWorkspace ] |
@@ -116,7 +116,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ DiscreteBrokerConfig ] |
 |   CONNECTION   | Established anonymous discrete broker [ RBroker ] |
 |   DATA INPUT   | Repository binary file input set on task, [ DiscreteTaskOptions.preloadWorkspace ] |
@@ -135,7 +135,7 @@ The following table describes the application workflow (steps) along with the lo
 
 | Step           | Log Output                                   |
 | -------------- | ---------------------------------------------|
-| CONFIGURATION  | Using endpoint [ http://localhost:7400/deployr ] |
+| CONFIGURATION  | Using endpoint [ http://localhost:8050/deployr ] |
 | CONFIGURATION  | Using broker config [ DiscreteBrokerConfig ] |
 |   CONNECTION   | Established anonymous discrete broker [ RBroker ] |
 |   DATA INPUT   | Repository binary file input set on task, [ DiscreteTaskOptions.preloadWorkspace ] |
@@ -156,7 +156,7 @@ The following table describes the application workflow (steps) along with the lo
 
 ## License ##
 
-Copyright (C) 2010-2015 by Revolution Analytics Inc.
+Copyright (C) 2010-2016, Microsoft Corporation
 
 This program is licensed to you under the terms of Version 2.0 of the
 Apache License. This program is distributed WITHOUT

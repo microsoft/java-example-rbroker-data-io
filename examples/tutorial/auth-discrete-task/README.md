@@ -1,7 +1,7 @@
 ## Tutorial: Authenticated Discrete Task Data I/O
 
 
-The following examples demonstrate data I/O on discrete tasks by [authenticated users](http://deployr.revolutionanalytics.com/documents/dev/api-doc/guide/introduction.html#introusers) using a [Discrete RBroker Runtime](http://deployr.revolutionanalytics.com/documents/dev/rbroker/#discrete).
+The following examples demonstrate data I/O on discrete tasks by [authenticated users](https://msdn.microsoft.com/en-us/microsoft-r/deployr-api-reference#users-on-the-api) using a [Discrete RBroker Runtime](https://msdn.microsoft.com/en-us/microsoft-r/deployr-rbroker-framework#discrete-task-runtime).
 
 ```
 Source: src/main/java/com/revo/deployr/rbroker/example/data/io/auth/discrete/task/*
@@ -173,7 +173,7 @@ The following table describes the application workflow (steps) along with the lo
 
 ## License ##
 
-Copyright (C) 2010-2015 by Revolution Analytics Inc.
+Copyright (C) 2010-2016, Microsoft Corporation
 
 This program is licensed to you under the terms of Version 2.0 of the
 Apache License. This program is distributed WITHOUT

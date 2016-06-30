@@ -1,7 +1,7 @@
 ## Tutorial: Authenticated Pooled Preload & Task Data I/O
 
 
-The following examples demonstrate data I/O on pool initialization, prior to task execution by [authenticated users](http://deployr.revolutionanalytics.com/documents/dev/api-doc/guide/introduction.html#introusers) using a [Pooled RBroker Runtime](http://deployr.revolutionanalytics.com/documents/dev/rbroker/#pooled).
+The following examples demonstrate data I/O on pool initialization, prior to task execution by [authenticated users](https://msdn.microsoft.com/en-us/microsoft-r/deployr-api-reference#users-on-the-api) using a [Pooled RBroker Runtime](https://msdn.microsoft.com/en-us/microsoft-r/deployr-rbroker-framework#pooled-task-runtime).
 
 ```
 Source: src/main/java/com/revo/deployr/rbroker/example/data/io/auth/pooled/preload/*
@@ -173,7 +173,7 @@ The following table describes the application workflow (steps) along with the lo
 
 ## License ##
 
-Copyright (C) 2010-2015 by Revolution Analytics Inc.
+Copyright (C) 2010-2016, Microsoft Corporation
 
 This program is licensed to you under the terms of Version 2.0 of the
 Apache License. This program is distributed WITHOUT
